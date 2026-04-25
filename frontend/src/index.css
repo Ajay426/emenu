@@ -1,0 +1,16 @@
+/* Make whole app take full screen height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Make app a vertical flex container */
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* This will push footer to bottom */
+main {
+  flex: 1;
+}

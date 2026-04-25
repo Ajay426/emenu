@@ -1,0 +1,73 @@
+/* SECTION GRID */
+.cards-section{
+  padding: 60px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 40px;
+  background:#f4f4f4;
+}
+
+
+/* CARD */
+.card{
+  background: white;
+  /* border-radius: 35px; */
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  /* transition: 0.3s; */
+  
+}
+
+/* .card:hover{
+  transform: translateY(-8px);
+} */
+
+/* IMAGE TOP */
+.card-img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.card-img img{
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 50%;
+  background:#f2f2f2;
+  padding: 10px;
+}
+
+/* HEART ICON */
+
+
+/* BODY */
+.card-body{
+  padding: 20px 25px 25px;
+}
+
+.card-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.card-header h3{
+  font-family: cursive;
+}
+
+.time{
+  font-size:13px;
+  color:gray;
+  display:flex;
+  align-items:center;
+  gap:4px;
+}
+
+.desc{
+  margin:15px 0;
+  font-size:14px;
+  color:#555;
+}
+

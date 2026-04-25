@@ -1,0 +1,127 @@
+/* PAGE BACKGROUND */
+.login-page{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#dfe4ea;
+  padding:20px;
+}
+
+/* OUTER CARD */
+.login-card{
+  width:100%;
+  max-width:420px;
+  padding:30px 20px 40px;
+  border-radius:30px;
+  background:#dfe4ea;
+  box-shadow: 10px 10px 20px #c5cad1,
+             -10px -10px 20px #ffffff;
+  text-align:center;
+}
+
+.title{
+  color:#2c7a7b;
+  font-size:26px;
+  margin-bottom:25px;
+}
+
+/* INNER CARD */
+.inner-card{
+  background:#dfe4ea;
+  padding:30px 25px 35px;
+  border-radius:25px;
+  box-shadow: inset 8px 8px 15px #c5cad1,
+              inset -8px -8px 15px #ffffff;
+}
+
+/* LOGO */
+.logo{
+  display:flex;
+  justify-content:center;
+  margin-bottom:15px;
+}
+
+.logo-circle{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:#e2aeae;
+  color:#000000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  box-shadow: 5px 5px 10px #c5cad1,
+             -5px -5px 10px #ffffff;
+}
+
+.subtitle{
+  color:gray;
+  margin-bottom:20px;
+}
+
+/* INPUTS */
+.input-group{
+  margin:15px 0;
+}
+
+.input-group input{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:25px;
+  background:#dfe4ea;
+  outline:none;
+  box-shadow: inset 5px 5px 10px #c5cad1,
+              inset -5px -5px 10px #ffffff;
+}
+
+/* BUTTON */
+.login-btn{
+  width:100%;
+  margin-top:15px;
+  padding:14px;
+  border:none;
+  border-radius:25px;
+  background:linear-gradient(45deg,#ff3434,#f9ffdd);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  box-shadow: 5px 5px 10px #c5cad1,
+             -5px -5px 10px #ffffff;
+}
+
+.forgot{
+  margin-top:15px;
+  font-size:13px;
+  color:gray;
+}
+
+/* SMALL SCREEN ADJUSTMENT */
+@media (max-width:480px){
+  .title{
+    font-size:22px;
+  }
+}
+
+.form-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-toggle button {
+  width: 50%;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border:#111;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.form-toggle .active {
+  background-color: #ff3434;
+  color: white;
+}

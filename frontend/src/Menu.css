@@ -1,0 +1,48 @@
+/* Scroll support */
+.table-container{
+  width:100%;
+  overflow-x:auto;
+}
+
+/* Mobile responsive table */
+@media (max-width:768px){
+
+  .menu-table thead{
+    display:none;
+  }
+
+  .menu-table,
+  .menu-table tbody,
+  .menu-table tr,
+  .menu-table td{
+    display:block;
+    width:100%;
+  }
+
+  .menu-table tr{
+    background:white;
+    margin-bottom:15px;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .menu-table td{
+    display:flex;
+    justify-content:space-between;
+    padding:10px 0;
+    border:none;
+    border-bottom:1px solid #eee;
+  }
+
+  .menu-table td:last-child{
+    border-bottom:none;
+  }
+
+  /* THIS IS WHY WE ADDED data-label */
+  .menu-table td::before{
+    content: attr(data-label);
+    font-weight:bold;
+    color:#555;
+  }
+}
