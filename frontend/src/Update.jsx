@@ -15,11 +15,11 @@ export default function Update() {
 
   const navigate = useNavigate();
 
-  // ✅ FIXED useEffect
+  // FIXED useEffect
   useEffect(() => {
     if (!id) return;
 
-    axios.get(`http://localhost:3001/menubyId/${id}`)
+    axios.get(`https://emenu-adnz.onrender.com/menubyId/${id}`)
       .then(res => {
         setValues({
           mname: res.data.menu.mname || '',
@@ -52,7 +52,7 @@ export default function Update() {
       qid: Number(values.qid)
     };
 
-    axios.put(`http://localhost:3001/updatemenu/${id}`, updatedData)
+    axios.put(`https://emenu-adnz.onrender.com/updatemenu/${id}`, updatedData)
       .then(res => {
         alert("Updated successfully");
         navigate('/menu');

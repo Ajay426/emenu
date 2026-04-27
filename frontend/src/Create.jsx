@@ -19,7 +19,7 @@ export default function Create () {
     }
     
     console.log("Sending data:", values);
-    axios.post('http://localhost:3001/addmenu', values)
+    axios.post('https://emenu-adnz.onrender.com/addmenu', values)
       .then(res => {
         console.log(res);
         navigate('/menu')
