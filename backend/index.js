@@ -13,12 +13,13 @@ app.get('/', (req, res) => {
 
 app.get('/menu', async (req, res) => {
     try {
+        console.log("API HIT")
         const result = await pool.query(`select m.mid, m.mname, q.size, m.price, c.category from menu m
 join food_cat as c on m.fid = c.fid 
 join qty_mast as q on m.qid = q.qid`)
         res.json({ data: result.rows });
     } catch (err) {
-        console.error(err.message);
+        console.error("DB Error",err);
         res.status(500).send("server error");
     }
 
