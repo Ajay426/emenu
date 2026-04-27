@@ -13,7 +13,7 @@ export default function Login() {
   // ⭐ LOGIN FUNCTION
   const handleLogin = async () => {
     try{
-      const res = await fetch("http://localhost:3001/login",{
+      const res = await fetch("https://emenu-adnz.onrender.com/login",{
         method:"POST",
         headers:{ "Content-Type":"application/json" },
         body: JSON.stringify({ uname, pwd })
@@ -43,7 +43,7 @@ export default function Login() {
     }
 
     try{
-      const res = await fetch("http://localhost:3001/register",{
+      const res = await fetch("https://emenu-adnz.onrender.com/register",{
         method:"POST",
         headers:{ "Content-Type":"application/json" },
         body: JSON.stringify({ uname, pwd })

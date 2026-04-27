@@ -11,7 +11,7 @@ export default function Menu() {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:3001/menu')
+    axios.get('https://emenu-adnz.onrender.com/menu')
       .then(res => {
         setData(res.data.data)
         // console.log(res.data.data);
@@ -23,7 +23,7 @@ export default function Menu() {
     const confirmDelete = window.confirm("Would you like to delete?");
 
     if (confirmDelete) {
-      axios.delete(`http://localhost:3001/menu/${mid}`)
+      axios.delete(`https://emenu-adnz.onrender.com/menu/${mid}`)
         .then(res => {
           console.log(res);
           window.location.reload();
